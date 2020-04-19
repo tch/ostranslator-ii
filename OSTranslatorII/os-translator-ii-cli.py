@@ -12,6 +12,10 @@
 # Fix ValueError: API 'QDate' has already been set to version 1
 from __future__ import print_function
 from __future__ import absolute_import
+
+# import sys
+# sys.path.append("/home/tch/opt/anaconda3/envs/wks_riskplace_dev/share/qgis/python/")
+
 try:
     import qgis.PyQt
 except ImportError:
@@ -22,9 +26,10 @@ import sys
 import argparse
 import os
 from qgis.PyQt import QtCore
-from .import_manager import ImportManager
-from .post_processor_thread import PostProcessorThread
-from .utils import (
+
+from import_manager import ImportManager
+from post_processor_thread import PostProcessorThread
+from utils import (
     build_args,
     get_input_files,
     get_pioneer_file,

@@ -11,7 +11,10 @@
 
 # This script initializes the plugin, making it known to QGIS.
 
+#import os, sys; sys.path.append(os.path.dirname(os.path.realpath(__file__)))
+
 def classFactory(iface):
     """Load OsTranslatorII class from file OsTranslatorII."""
     from .os_translator_ii import OsTranslatorII
     return OsTranslatorII(iface)
+
