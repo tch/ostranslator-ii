@@ -17,11 +17,11 @@ except ImportError:
     pass
 
 import sys
-from qgis.PyQt import QtGui
-from .os_translator_ii_dialog import OsTranslatorIIDialog
+from qgis.PyQt import QtGui, QtWidgets
+from os_translator_ii_dialog import OsTranslatorIIDialog
 
 def main():
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     d = OsTranslatorIIDialog(None, None)
     d.show()
     d.exec_()

@@ -13,10 +13,10 @@ from __future__ import absolute_import
 import string, multiprocessing
 import xml.etree.ElementTree as ET
 
-from .import_manager import *
-from .result_dialog import *
-from .post_processor_thread import *
-from .utils import *
+from import_manager import *
+from result_dialog import *
+from post_processor_thread import *
+from utils import *
 
 try:
     from qgis.core import QgsDataSourceURI
